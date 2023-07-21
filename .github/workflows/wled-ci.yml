@@ -57,7 +57,7 @@ jobs:
           python-version: '3.9'
     - name: Install PlatformIO
       run: pip install -r requirements.txt
-    - name: Build firmware
+    - name: Build firmware with audio reactive usermod
       env:
         WLED_RELEASE: True
       run: pio run -e ${{ matrix.environment }}
